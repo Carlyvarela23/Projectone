@@ -1,0 +1,122 @@
+h1 { 
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: Normal;
+  font-size: 75px;
+}
+h2,h3{ 
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: Normal;
+  color: red;
+}
+
+h4{ 
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: Normal;
+  padding-top: 0px;
+  margin-top: 0px;
+
+}
+
+body {
+      background-color: #87CEEB80;
+}
+p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: Normal;     
+  }
+
+li,label,nav { 
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-style: Normal;
+   }
+
+   header {
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+div{
+    outline-width: 3px;
+    outline-color: black;
+    outline-style: solid;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 1px;
+
+}
+
+section { 
+      border-bottom-width: 2px; 
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      margin-top: 5px;
+      margin-bottom: 25px;
+ }
+
+
+
+nav {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 15px;
+}
+
+a {
+    color: #174a7e;
+}
+
+a:hover {
+    color: #8b0000;
+}
+
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    font-size: 10px;
+}
+
+textarea {  
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    font-size: 10px; }
+
+
