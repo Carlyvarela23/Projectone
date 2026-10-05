@@ -1,0 +1,204 @@
+<!doctype html>
+	<html lang="en">
+
+<head>
+	<title> Workout Tracker</title>
+
+
+<!-- START GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<!-- END GOOGLE FONTS-->
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1> Workout Tracker</h1>
+		<h4>Record Workouts to stay motivated and keep track of progress. </h4>
+	</header>
+
+		<img src="ppl.png" style="width: 1000px" class=center-image alt="push pull legs program diagram.">
+
+	<!-- 
+AI Use Disclosure:
+Tool(s): ChatGPT (free version)
+Purpose: Helped explain how to center my image in my heading
+Human Role: I applied the code it recommeded me to use and changed it to fit my project specifically.
+
+-->
+
+	<nav>
+		<a href="#push-day-exercises">Push Day Exercises</a>
+		<a href="#pull-day-exercises">Pull Day Exercises</a>
+		<a href="#leg-day-exercises">Leg Day Exercises</a>
+		<a href="#workout">Today's Workout</a>
+		<a href="#add">Add Exercise</a>
+		<a href="#history">Past Workouts</a>
+	</nav>
+
+	<main>
+
+
+	<section id=push-day-exercises class=special-section>
+	<h2>Push Day Exercises.</h2>
+		<p>These exercises work your chest, shoulders, and triceps.<br>
+		Exercises include: Dumbbell Bench Press, Dumbbell Lateral Raise, Dumbbell Incline Bench Press, Dumbbell Shoulder Press, Cable Chest Fly, Tricep Extension, and Overhead Tricep Extension</p>
+		<ul>
+  			<li><input type="checkbox" name="push-day-exercises" value="dbbp">Dumbbell Bench Press</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="dblr">Dumbbell Lateral Raise</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="dbibp">Dumbbell Incline Bench Press</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="dbsp">Dumbbell Shoulder Press</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="ccf">Cable Chest Fly</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="triex">Tricep Extension</li>
+  			<li><input type="checkbox" name="push-day-exercises" value="ohtriex">Overhead Tricep Extension</li>
+		</ul>
+
+		<p>Effort Level: <br><textarea name="effort">Need to go lighter on...</textarea>
+		</p>
+
+	</section>
+ 
+	<section id=pull-day-exercises>
+	<h2>Pull Day Exercises.</h2>
+		<p>These exercises work your back, biceps, and abs.<br>
+		Exercises include: Lat Pulldown, Seated Row, One Arm Row, Rear Delt Fly, Straight Arm Pulldown, One Arm Baysian Curl, Cable Bicep Curl, Hammer Curls Back Extension, and Kneeling Cable Crunches.</p>
+		<ul>
+			<li><input type="checkbox" name="pull-day-exercises" value="latpd">Lat Pulldown</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="seatedrow">Seated Row</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="onear">One Arm Row</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="reardf">Rear Delt Fly</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="strapd">Straight Arm Pulldown</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="onearmbcurl">One Arm Bayesian Curl</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="cbp">Cable Bicep Curl</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="bexten">Back Extension</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="hcurl">Hammer Curl</li>
+			<li><input type="checkbox" name="pull-day-exercises" value="kcc">Kneeling Cable Crunch</li>
+		</ul>
+
+		<p>Effort Level: <br><textarea name="effort">Need to go lighter on...</textarea>
+		</p>
+
+	</section>
+
+	<section id=leg-day-exercises>
+	<h2>Leg Day Exercises.</h2>
+		<p>These exercises work your legs.<br>
+		Exercises include: Barbell Back Squat, Barbell Romanian Deadlift, Hack Squat, Barbell Hip Thrust, Leg Extension, Hamstring Curl, Hip Abduction, Hip Adduction, and Standing Calf Raises.</p>
+		<ul>
+  			<li><input type="checkbox" name="leg-day-exercises" value="bbsq">Barbell Back Squat</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="brdl">Barbell Romanian Deadlift</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="hsq">Hack Squat</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="bhp">Barbell Hip Thrust</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="legex">Leg Extension</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="Hamcurl">Hamstring Curl</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="hipabd">Hip Abduction</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="hipadd">Hip Adduction</li>
+  			<li><input type="checkbox" name="leg-day-exercises" value="stcr">Standing Calf Raises</li>
+  		</ul>
+
+  			<p>Effort Level: <br><textarea name="effort">Need to go lighter on...</textarea>
+		</p>
+
+
+
+	</section>
+
+	<section id="workout">
+		<h2> Today's Workout</h2>
+		<p>Choose the exercises you completed in today's workout.</p>
+		<h3> Workout Day </h3>
+
+		<label>
+			<input type="radio" name="workout-type" value="push">
+			Push
+		</label>
+
+		<label>
+		<input type="radio" name="workout-type" value="pull">
+			Pull
+		</label>
+
+		<label>
+			<input type="radio" name="workout-type" value="legs">
+			Legs
+		</label>
+
+		<h3>Workout Notes</h3>
+
+		<label for="workout-notes">Notes:</label>
+		<textarea id="workout-notes" name="workout-notes"></textarea>
+
+	</section>
+ 
+
+ 	<section id="add">
+ 		<h2>Add Exercise</h2>
+
+ 		<p>Enter the Exercise, sets, reps, and weight.</p>
+
+ 		<form>
+
+ 			<label for="exercise">Exercise:</label>
+ 			<input type="text" id="exercise" name="exercise">
+
+ 			<br>
+
+ 			<label for="sets">Sets:</label>
+ 			<input type="number" id="sets" name="sets">
+				
+			<br>
+
+ 			<label for="reps">Reps:</label>
+ 			<input type="number" id="reps" name="reps">
+
+ 			<br>
+
+			<label for="weight">Weight (lbs):</label>
+			<input type="number" id="weight" name="weight">
+
+ 			<br>
+
+ 			<button type="submit"> Add Exercise</button>
+ 		</form>
+ 	</section>
+
+ 	<section id="history">
+ 		<div>
+ 		<h2>Past Workouts</h2>
+
+ 		<h3>September 18 - Push Day</h3>
+            <ul>
+                <li>Dumbbell Bench Press - 3 sets of 10 with 30lbs</li>
+                <li>Dumbbell Shoulder Press - 3 sets of 10 with 20lbs</li>
+                <li>Cable Chest Fly - 3 sets of 12 with 35lbs</li>
+            </ul>
+
+            <h3>September 16 - Pull Day</h3>
+            <ul>
+                <li>Lat Pulldown - 3 sets of 10 with 100lbs</li>
+                <li>Seated Row - 3 sets of 10 with 35lbs </li>
+                <li>Hammer Curl - 3 sets of 12 with 20lbs </li>
+            </ul>
+
+            <h3>September 14 - Leg Day</h3>
+            <ul>
+                <li>Barbell Back Squat - 3 sets of 10 with 135lbs</li>
+                <li>Leg Extension - 3 sets of 12 with 90lbs</li>
+                <li>Hamstring Curl - 3 sets of 12 with 65lbs</li>
+                <li>Standing Calf Raises - 3 sets of 15 with 20lbs</li>
+            </ul>
+        </div>
+
+
+	</section>
+
+	</main>
+
+	<footer>
+		<p> Workout Tracker</p>
+	</footer>
+</body>
+</html>
